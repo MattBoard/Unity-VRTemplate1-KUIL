@@ -1075,7 +1075,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 2
+    m_Bits: 6
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_FocusMode: 1
@@ -1255,7 +1255,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &403956302
 Transform:
   m_ObjectHideFlags: 0
@@ -2735,6 +2735,7 @@ GameObject:
   m_Component:
   - component: {fileID: 715643167}
   - component: {fileID: 715643172}
+  - component: {fileID: 715643173}
   m_Layer: 0
   m_Name: Left Controller
   m_TagString: Untagged
@@ -2757,7 +2758,6 @@ Transform:
   m_Children:
   - {fileID: 1681424927}
   - {fileID: 1267090550}
-  - {fileID: 1395725598}
   - {fileID: 1467803767}
   m_Father: {fileID: 1487540133}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3005,6 +3005,31 @@ MonoBehaviour:
     m_Reference: {fileID: -1636515391019944688, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   m_ButtonPressPoint: 0.5
+--- !u!114 &715643173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 715643166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4a50d88b55b45648927679791f472de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_GroupName: Left
+  m_InteractionManager: {fileID: 834955088}
+  m_StartingGroupMembers:
+  - {fileID: 1681424928}
+  - {fileID: 1267090554}
+  - {fileID: 1467803768}
+  m_StartingInteractionOverridesMap:
+  - groupMember: {fileID: 1467803768}
+    overrideGroupMembers:
+    - {fileID: 1681424928}
+  - groupMember: {fileID: 1681424928}
+    overrideGroupMembers:
+    - {fileID: 1267090554}
 --- !u!1 &762460351
 GameObject:
   m_ObjectHideFlags: 0
@@ -3499,6 +3524,7 @@ GameObject:
   m_Component:
   - component: {fileID: 944453455}
   - component: {fileID: 944453460}
+  - component: {fileID: 944453461}
   m_Layer: 0
   m_Name: Right Controller
   m_TagString: Untagged
@@ -3521,7 +3547,6 @@ Transform:
   m_Children:
   - {fileID: 1717985783}
   - {fileID: 403956302}
-  - {fileID: 1874184247}
   - {fileID: 599960392}
   m_Father: {fileID: 1487540133}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3769,6 +3794,31 @@ MonoBehaviour:
     m_Reference: {fileID: -6447266317303757838, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   m_ButtonPressPoint: 0.5
+--- !u!114 &944453461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 944453454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4a50d88b55b45648927679791f472de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_GroupName: Right
+  m_InteractionManager: {fileID: 834955088}
+  m_StartingGroupMembers:
+  - {fileID: 1717985784}
+  - {fileID: 403956306}
+  - {fileID: 599960393}
+  m_StartingInteractionOverridesMap:
+  - groupMember: {fileID: 599960393}
+    overrideGroupMembers:
+    - {fileID: 1717985784}
+  - groupMember: {fileID: 1717985784}
+    overrideGroupMembers:
+    - {fileID: 403956306}
 --- !u!1 &996272224
 GameObject:
   m_ObjectHideFlags: 0
@@ -4682,7 +4732,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1267090550
 Transform:
   m_ObjectHideFlags: 0
@@ -5117,12 +5167,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1395725597}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 715643167}
+  m_Father: {fileID: 1487540133}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1395725599
 MonoBehaviour:
@@ -5271,7 +5321,9 @@ Transform:
   m_Children:
   - {fileID: 514922179}
   - {fileID: 715643167}
+  - {fileID: 1395725598}
   - {fileID: 944453455}
+  - {fileID: 1874184247}
   - {fileID: 879208862}
   m_Father: {fileID: 996272227}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5591,7 +5643,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 2
+    m_Bits: 6
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_FocusMode: 1
@@ -6139,7 +6191,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 944453455}
+  m_Father: {fileID: 1487540133}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1874184248
 MonoBehaviour:
@@ -6455,7 +6507,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 2
+    m_Bits: 6
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_FocusMode: 1
